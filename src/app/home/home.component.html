@@ -1,0 +1,48 @@
+<h1 class="bloc">简介 - 关于我</h1>
+<div class="about">
+  <div class="lt">
+    <div class="title_content">
+      <h2>丁燕</h2>
+    </div>
+    <ul class="aboutMe">
+      <li>
+        <i></i>
+        <label>姓名</label>
+        <span class="value">丁燕</span>
+        <div class="clear"></div>
+      </li>
+      <li>
+        <i></i>
+        <label>出生日期</label>
+        <span class="value">1995年5月8日</span>
+        <div class="clear"></div>
+      </li>
+      <li>
+        <i></i>
+        <label>居住地</label>
+        <span class="value">江苏 , 南京</span>
+        <div class="clear"></div>
+      </li>
+      <li>
+        <i></i>
+        <label>邮箱</label>
+        <span class="value">1275409699@QQ.com</span>
+        <div class="clear"></div>
+      </li>
+      <li>
+        <i></i>
+        <label>电话</label>
+        <span class="value">13956227817</span>
+        <div class="clear"></div>
+      </li>
+    </ul>
+    <p class="aboutSpeak">
+      “最近历程: 使用angular4（typescript）配合NG-ZORRO组件库编写管理平台以及前台展示页面,具有模块化思想，熟悉typescript语言模式，有兴趣钻研各种前端框架...”
+    </p>
+  </div>
+  <div class="rt">
+    <nz-carousel [nzEffect]="'fade'">
+      <div nz-carousel-content *ngFor="let index of imgList"><div><img [src]="index.picurl"></div></div>
+    </nz-carousel>
+  </div>
+</div>
